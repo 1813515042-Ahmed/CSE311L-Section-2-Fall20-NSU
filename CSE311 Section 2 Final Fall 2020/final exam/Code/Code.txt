@@ -1,0 +1,16 @@
+1.
+
+ 
+a) 
+
+SELECT sname, age from student
+join department
+where fname LIKE 'Ivana Teach' and major LIKE 'History'
+Group by age DESC
+
+d)
+
+SELECT DISTINCT S.sname
+FROM student S 
+WHERE S.snum NOT IN(SELECT E.snum
+                    FROM course E )
